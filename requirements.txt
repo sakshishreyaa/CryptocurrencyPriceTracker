@@ -1,0 +1,11 @@
+APScheduler==3.9.1
+
+Django==3.2.16
+idna==3.4
+importlib-resources==5.4.0
+
+psycopg2==2.9.4
+
+requests==2.27.1
+
+urllib3==1.26.12
