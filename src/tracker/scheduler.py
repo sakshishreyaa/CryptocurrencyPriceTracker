@@ -25,12 +25,11 @@ def job():
     
     data= fetch_data()
     obj=CryptoTracker.objects.filter(latest=True).first()
-    print(obj)
     if float(data)<MIN_PRICE or float(data)>MAX_PRICE:
         send_email_alert()
-
-    obj.latest=False
-    obj.save()
+    if obj:
+        obj.latest=False
+        obj.save()
 
 
 
