@@ -7,18 +7,17 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='CryptoTracker',
+            name="CryptoTracker",
             fields=[
-                ('id', models.BigAutoField(primary_key=True, serialize=False)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('latest', models.BooleanField(default=False)),
-                ('name', models.CharField(max_length=200)),
-                ('price', models.FloatField(max_length=200)),
+                ("id", models.BigAutoField(primary_key=True, serialize=False)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("latest", models.BooleanField(default=False)),
+                ("name", models.CharField(max_length=200)),
+                ("price", models.FloatField(max_length=200)),
             ],
         ),
     ]
